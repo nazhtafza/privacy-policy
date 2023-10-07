@@ -1,0 +1,68 @@
+body {
+    background-color: #FFFDF3;
+    font-family: 'poppins', 'sans-serif';
+}
+
+
+/* Styling navbar */
+
+header {
+    background-color: #FFF;
+    color: #39875B;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.title h1 {
+    font-size: 24px;
+    /* Jarak antara logo dan judul */
+}
+
+.logo img {
+    width: 50px;
+    /* Sesuaikan ukuran logo dengan kebutuhan Anda */
+    height: auto;
+}
+
+
+/* CSS untuk card */
+
+.hero {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #39875B;
+}
+
+.hero p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.hero ul li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
