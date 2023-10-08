@@ -36,6 +36,36 @@
         <p>Dengan menggunakan Aplikasi kami, Anda setuju untuk tunduk pada Kebijakan Privasi ini. Jika Anda tidak setuju dengan Kebijakan Privasi ini, mohon untuk tidak menggunakan Aplikasi BASWARA: Bank Sampah Warga. Terima kasih telah menggunakan Aplikasi
             kami. Kami berharap Anda mendapatkan manfaat yang maksimal dari pengalaman Anda dengan Aplikasi BASWARA: Bank Sampah Warga.</p>
     </div>
+    <div class="hero">
+        <h3>Formulir Pengajuan Penghapusan Akun</h3>
+        <p>Apabila Anda meminta untuk melakukan penghapusan akun, Anda dapat menuliskan pesan dibawah ini:</p>
+        <div class="container">
+            <h2>Kirim Email</h2>
+            <form id="emailForm">
+                <label for="to">Penerima:</label>
+                <input type="email" id="to" required>
+
+                <label for="subject">Subjek:</label>
+                <input type="text" id="subject" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="button" id="sendEmail">Kirim</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("sendEmail").addEventListener("click", function() {
+            var to = document.getElementById("to").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            var mailtoLink = "mailto:ppkormawa.baswara@gmail.com" + to + "?subject=" + subject + "&body=" + message;
+
+            window.location.href = mailtoLink;
+        });
+    </script>
 
 </body>
 
